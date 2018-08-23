@@ -19,7 +19,7 @@ $('.rupee').on('click', function () {
   gameStatus()
 })
 
-// gameStatus
+//check gameStatus
 function gameStatus () {
   if (goal === total) {
     $('#message').text('You Win!')
