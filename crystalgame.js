@@ -22,11 +22,17 @@ $('.rupee').on('click', function () {
 // gameStatus
 function gameStatus () {
   if (goal === total) {
-    alert('You Win!')
+    $('#message').text('You Win!')
     reset()
+    setTimeout(function () {
+      $('#message').text("Click on a crystal to try and reach the total!")
+    }, 1000)
   } else if (total > goal) {
-    alert('You Lose!')
+    $('#message').text('You Lose!')
     reset()
+    setTimeout(function () {
+      $('#message').text("Click on a crystal to try and reach the total!")
+    }, 1000)
   }
 }
 
