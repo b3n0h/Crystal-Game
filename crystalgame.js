@@ -1,5 +1,7 @@
 let total = 0
-$('.goal').text(Math.floor(Math.random() * 80) + 20)
+let goal = Math.floor(Math.random() * 80) + 20)
+$('.goal').text(goal)
+$('.total').text(total)
 
 for (let i = 1; i < 4; i++) {
   $('.rupeeRow').append(`
@@ -14,4 +16,15 @@ $('.rupee').on('click', function () {
   let rupeeValue = $(this).attr('data-rupee')
   total += parseInt(rupeeValue)
   $('.total').text(total)
+  gameStatus()
 })
+
+function gameStatus () {
+  if (goal === total) {
+    alert('You Win!')
+    reset()
+  } else if (total > goal) {
+    alert('You Lose!')
+    reset()
+  }
+}
