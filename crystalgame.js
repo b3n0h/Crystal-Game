@@ -1,5 +1,5 @@
 let total = 0
-let goal = Math.floor(Math.random() * 80) + 20)
+let goal = Math.floor(Math.random() * 80) + 20
 $('.goal').text(goal)
 $('.total').text(total)
 
@@ -19,6 +19,7 @@ $('.rupee').on('click', function () {
   gameStatus()
 })
 
+// gameStatus
 function gameStatus () {
   if (goal === total) {
     alert('You Win!')
@@ -27,4 +28,15 @@ function gameStatus () {
     alert('You Lose!')
     reset()
   }
+}
+
+// reset
+function reset () {
+  total = 0
+  goal = Math.floor(Math.random() * 80) + 20
+  $('.total').text(total)
+  $('.goal').text(goal)
+  $('#rupee1').attr('data-rupee', Math.floor(Math.random() * 20) +1)
+  $('#rupee2').attr('data-rupee', Math.floor(Math.random() * 20) +1)
+  $('#rupee3').attr('data-rupee', Math.floor(Math.random() * 20) +1)
 }
