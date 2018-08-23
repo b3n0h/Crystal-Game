@@ -1,3 +1,6 @@
+let total = 0
+
+
 for (let i = 1; i < 4; i++) {
   $('.rupeeRow').append(`
       <div class="col-md-4">
@@ -8,5 +11,7 @@ for (let i = 1; i < 4; i++) {
 
 // make each one clickable
 $('.rupee').on('click', function () {
-  
+  let rupeeValue = $(this).attr('data-rupee')
+  total += parseInt(rupeeValue)
+  $('.total').text(total)
 })
