@@ -1,5 +1,5 @@
 let total = 0
-$('.goal').text(Math.floor(Math.random()) * 100) + 20)
+$('.goal').text(Math.floor(Math.random() * 80) + 20)
 
 for (let i = 1; i < 4; i++) {
   $('.rupeeRow').append(`
