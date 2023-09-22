@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rupee Game</title>
+  <link rel="stylesheet" href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' crossorigin='anonymous'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <h2 id="message">Click on a rupee to try and reach the total!</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Goal : <span class="goal"></span></h4>
+    </div>
+    <div class="col-md-6">
+      <h4>Total : <span class="total"></span></h4>
+    </div>
+  </div>
+  <div class="row rupeeRow"></div>
+</div>
+  <!-- create conditions for win/lose -->
+
+<script src='https://code.jquery.com/jquery-3.3.1.js' integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=' crossorigin='anonymous'></script>
+<script src="./crystalgame.js"></script>
+</body>
+</html>
